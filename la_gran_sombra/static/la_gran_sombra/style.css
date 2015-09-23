@@ -1,0 +1,15 @@
+body{
+	background: #CE3636;
+}
+fieldset{
+	width: 80%;
+	margin-top: 6%;
+	margin-right: 30%;
+	font-family: vsprofit;
+	color:#2EDE36;
+	background-color:#743F3F; 
+}
+@font-face{
+	font-family: vsprofit;
+	src:url(V5PRD___.TTF);
+}
