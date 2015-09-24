@@ -9,3 +9,6 @@ def index(request):
 	#template = loader.get_template('la_gran_sombra/index.html')
 	context = {'lista_cadaveres': lista_cadaveres}
 	return render(request, 'la_gran_sombra/index.html', context)
+
+def cadaver(request):
+	return HttpResponse("sarasasarasrasas")
