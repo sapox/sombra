@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La gran sombra</title>
+    {% block css %}
+        <link rel="stylesheet" href='{% static 'bootstrap/dist/css/bootstrap.css' %}'>
+    {% endblock css %}
+</head>
+<body>
+    {% block content %}{% endblock content %}
+</body>
+    {% block js %}
+        <script type="text/javascript" src='{% static 'underscore/underscore.js' %}'></script>
+        <script type="text/javascript" src='{% static 'jquery/dist/jquery.js' %}'></script>
+        <script type="text/javascript" src='{% static 'bootstrap/dist/bootstrap.js' %}'></script>
+    {% endblock js %}
+</html>

@@ -1,9 +1,7 @@
-import time
-
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 
-from .forms import TimerForm
+from .forms import SombraForm, TimerForm
 from .models import Sombra
 
 
@@ -20,12 +18,20 @@ def timer(request):
 
 
 def form(request):
-    # form
-    return render(request, 'la_gran_sombra/form.html')
+    if request.method == "POST":
+        form = SombraForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect(reverse('la_gran_sombra:list'))
+    else:
+        form = SombraForm()
+    context = {}
+    context['form'] = form
+    return render(request, 'la_gran_sombra/form.html', context)
 
 
 def list(request):
-    # lista_cadaveres = Sombra.objects.order_by('id')
+    lista_cadaveres = Sombra.objects.order_by('id')
     # output = ', '.join([p.cadaver for p in lista_cadaveres])
     context = {}
     context['lista_cadaveres'] = lista_cadaveres

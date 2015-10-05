@@ -1,16 +1,30 @@
-<script>
-    $('#timer_form').submit(function(e) {
-        e.preventDefault();
-        var minutes = $('#id_minutes').val();
-        setTimeout(function(){
-            alert("Levantate guachin!");
-        }, 3000);
-        $(this).submit();
-    });
-</script>
+{% extends "la_gran_sombra/base.html" %}
+{% block js %}
+    {{ block.super }}
+    <script>
+        $('#timer_form_btn').click(function(e) {
+            e.preventDefault();
+            var minutes = $('#id_minutes').val();
+            setTimeout(function(){
+                alert("Levantate guachin!");
+                $('#timer_form').submit()
+            }, (minutes * 60000));
+            var counter = 0;
+            setInterval(function() {
+                counter += 1;
+                console.log(counter);
+            }, 1000)
+        });
+    </script>
+{% endblock js %}
 
-<form id="timer_form" action="" method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button>PLAY</button>
-</form>
+{% block content %}
+
+    <form id="timer_form" action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="timer_form_btn">PLAY</button>
+    </form>
+
+{% endblock content %}
+

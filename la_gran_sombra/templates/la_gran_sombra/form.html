@@ -1,7 +1,5 @@
-{% load staticfiles %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'la_gran_sombra/style.css' %}" />
-
-<div class="redondo">
-	<p>comenzar</p>
-</div>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Enviar</button>
+</form>
