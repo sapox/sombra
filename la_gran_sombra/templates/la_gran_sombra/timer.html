@@ -23,7 +23,7 @@
     <form id="timer_form" action="" method="POST">
         {% csrf_token %}
         {{ form.as_p }}
-        <button id="timer_form_btn">PLAY</button>
+        <button id="timer_form_btn" class="hide"></button>
     </form>
 
 {% endblock content %}
