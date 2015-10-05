@@ -1,6 +1,14 @@
 body{
 	background: #CE3636;
 }
+.redondo{
+    width: 500px;
+    height: 500px;
+    background: black;
+    color: grey;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
 fieldset{
 	width: 80%;
 	margin-top: 6%;
