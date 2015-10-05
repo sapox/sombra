@@ -1,0 +1,16 @@
+<script>
+    $('#timer_form').submit(function(e) {
+        e.preventDefault();
+        var minutes = $('#id_minutes').val();
+        setTimeout(function(){
+            alert("Levantate guachin!");
+        }, 3000);
+        $(this).submit();
+    });
+</script>
+
+<form id="timer_form" action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>PLAY</button>
+</form>

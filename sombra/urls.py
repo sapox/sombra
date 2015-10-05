@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-	url(r'^la_gran_sombra/', include('la_gran_sombra.urls', namespace="la_gran_sombra")),
+	url(r'^', include('la_gran_sombra.urls', namespace="la_gran_sombra")),
     url(r'^admin/', include(admin.site.urls)),
 ]

@@ -1,17 +1,32 @@
-#from django.template import RequestContext, loader
-from django.shortcuts import render
+import time
 
+from django.core.urlresolvers import reverse
+from django.shortcuts import render, redirect
+
+from .forms import TimerForm
 from .models import Sombra
-# Create your views here.
-def index(request):
-	lista_cadaveres = Sombra.objects.order_by('id')
-	#output = ', '.join([p.cadaver for p in lista_cadaveres])
-	#template = loader.get_template('la_gran_sombra/index.html')
-	context = {'lista_cadaveres': lista_cadaveres}
-	return render(request, 'la_gran_sombra/index.html', context)
 
-def cadaver(request):
-	return HttpResponse("sarasasarasrasas")
 
-def comenzar(request):
-	return render(request, 'la_gran_sombra/comenzar.html')
+def timer(request):
+    if request.method == "POST":
+        form = TimerForm(request.POST)
+        if form.is_valid():
+            return redirect(reverse('la_gran_sombra:create'))
+    else:
+        form = TimerForm()
+    context = {}
+    context['form'] = form
+    return render(request, 'la_gran_sombra/timer.html', context)
+
+
+def form(request):
+    # form
+    return render(request, 'la_gran_sombra/form.html')
+
+
+def list(request):
+    # lista_cadaveres = Sombra.objects.order_by('id')
+    # output = ', '.join([p.cadaver for p in lista_cadaveres])
+    context = {}
+    context['lista_cadaveres'] = lista_cadaveres
+    return render(request, 'la_gran_sombra/list.html', context)
