@@ -12,3 +12,6 @@ def index(request):
 
 def cadaver(request):
 	return HttpResponse("sarasasarasrasas")
+
+def comenzar(request):
+	return render(request, 'la_gran_sombra/comenzar.html')
