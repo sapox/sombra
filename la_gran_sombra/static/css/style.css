@@ -35,5 +35,9 @@ fieldset{
 }
 @font-face{
 	font-family: vsprofit;
-	src:url(V5PRD___.TTF);
+	src:url(/static/fonts/V5PRD___.TTF);
+}
+.input-timer{
+	/*width: 300px;*/
+	height: 200px;
 }

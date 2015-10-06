@@ -1,9 +1,8 @@
-{% load staticfiles %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'la_gran_sombra/style.css' %}" />
-
+{% extends 'la_gran_sombra/base.html' %}
+{% block content %}
 <fieldset>
     {% for Sombra in lista_cadaveres %}
         {{ Sombra.cadaver }}
     {% endfor %}
 </fieldset>
+{% endblock content%}

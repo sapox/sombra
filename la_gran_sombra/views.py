@@ -11,7 +11,7 @@ def timer(request):
         if form.is_valid():
             return redirect(reverse('la_gran_sombra:create'))
     else:
-        form = TimerForm()
+        form = TimerForm(initial={'minutes': 0})
     context = {}
     context['form'] = form
     return render(request, 'la_gran_sombra/timer.html', context)

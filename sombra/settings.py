@@ -106,9 +106,13 @@ STATIC_URL = '/static/'
 
 STATICFILES_FINDERS = global_settings.STATICFILES_FINDERS + ('djangobower.finders.BowerFinder',)
 
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'la_gran_sombra', 'static'),
+)
+
 BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 
-BOWER_PATH = '/home/d/.nvm/versions/node/v0.12.0/bin/bower'
+BOWER_PATH = '/usr/bin/bower'
 
 BOWER_INSTALLED_APPS = (
     'jquery',
