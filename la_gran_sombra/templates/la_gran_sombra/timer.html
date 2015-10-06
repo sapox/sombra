@@ -1,35 +1,4 @@
 {% extends "la_gran_sombra/base.html" %}
-{% block js %}
-    {{ block.super }}
-    <script>
-        $('#timer_form_btn').click(function(e) {
-            e.preventDefault();
-            var minutes = $('#id_minutes').val();
-            setTimeout(function(){
-                alert("Levantate guachin!");
-                $('#timer_form').submit()
-            }, (minutes * 60000));
-            var counter = 0;
-            setInterval(function() {
-                counter += 1;
-                console.log(counter);
-            }, 1000)
-        });
-        $('#suma').click(function(e) {
-            var minutes = parseInt($('#id_minutes').val());
-            $('#id_minutes').val(minutes+1);
-        });
-        $('#resta').click(function(e) {
-            var minutes = parseInt($('#id_minutes').val());
-            if(minutes>0){
-                $('#id_minutes').val(minutes-1);
-            }
-        });
-        $('#play').click(function() {
-            $('#timer_form_btn').trigger('click');
-        })
-    </script>
-{% endblock js %}
 
 {% block content %}
 
@@ -48,9 +17,7 @@
             <div class="row">
                 <button id="play" class="jumbotron">play</button>
             </div>
-
         </div>
-        <button id="timer_form_btn" class="hide"></button>
     </form>
 
 {% endblock content %}
