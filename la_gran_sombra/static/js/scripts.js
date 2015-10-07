@@ -17,7 +17,7 @@ $(function() {
             // sonido}
             var music = new Audio("/static/sounds/alert.mp3");
             music.play();
-            var counter = 3;
+            var counter = 0;
             $(music).bind("ended", function() {
                 music.play();
                 if (counter < 1) {
