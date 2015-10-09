@@ -6,6 +6,7 @@ from .models import Sombra
 
 class TimerForm(forms.Form):
     minutes = forms.IntegerField(
+        label='',
     	widget = forms.TextInput(attrs={"class":"form-control input-timer sombra"}),
     	)
 

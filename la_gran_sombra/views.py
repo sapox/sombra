@@ -1,3 +1,5 @@
+import random
+
 from django.core.urlresolvers import reverse
 from django.shortcuts import render, redirect
 
@@ -33,8 +35,10 @@ def form(request):
 def list(request):
     lista_cadaveres = Sombra.objects.order_by('id')
     # output = ', '.join([p.cadaver for p in lista_cadaveres])
+    gifs = range(1, 16, random.randint(1,4))
     context = {}
     context['lista_cadaveres'] = lista_cadaveres
+    context['gifs'] = gifs * lista_cadaveres.count()
     return render(request, 'la_gran_sombra/list.html', context)
 
 def thanks(request):

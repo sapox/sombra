@@ -1,8 +1,25 @@
 {% extends 'la_gran_sombra/base.html' %}
+
 {% block content %}
-<fieldset class="salida">
-    {% for Sombra in lista_cadaveres %}
-        {{ Sombra.cadaver }}
-    {% endfor %}
-</fieldset>
+	<div class="row" style="position: absolute;">
+        {% for number in gifs %}
+            <div class="col-md-2">
+                <img class="logif" src="/static/gifs/{{ number }}.gif">         
+            </div>
+        {% endfor %}
+    </div>
+    
+    <div class="container">
+		<div class="row">
+			<div id="wrapper_salida" class="col-sm-12">
+				<fieldset id="fieldset_salida" class="salida sombra">
+				    {% for Sombra in lista_cadaveres %}
+				        {{ Sombra.cadaver }}
+				    {% endfor %}
+				</fieldset>
+			</div>
+				
+		</div>
+    </div>
+
 {% endblock content%}

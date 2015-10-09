@@ -34,5 +34,11 @@ $(function() {
             counter += 1;
             $('#id_minutes').val(counter);
         }, 1000)
-    })
+    });
+
+    setInterval(function() {
+        console.log("sisi");
+        var url = "/list";
+        $('#wrapper_salida').load(url + ' #fieldset_salida');
+    }, 3000);
 });
