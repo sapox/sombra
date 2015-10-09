@@ -15,7 +15,7 @@ $(function() {
         var minutes = $('#id_minutes').val();
         setTimeout(function(){
             // sonido}
-            var music = new Audio("/static/sounds/alert.mp3");
+            var music = new Audio("/static/sounds/pigue.mp3");
             music.play();
             var counter = 0;
             $(music).bind("ended", function() {

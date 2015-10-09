@@ -1,0 +1,54 @@
+proyeccion - poiu
+
+"GET / HTTP/1.1" 200 1734
+[08/Oct/2015 20:52:24] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:52:24] "GET /static/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 147430
+[08/Oct/2015 20:52:24] "GET /static/jquery/dist/jquery.js HTTP/1.1" 200 247597
+[08/Oct/2015 20:52:24] "GET /static/underscore/underscore.js HTTP/1.1" 200 52919
+[08/Oct/2015 20:52:24] "GET /static/css/style.css HTTP/1.1" 200 1057
+[08/Oct/2015 20:52:24] "GET /static/js/scripts.js HTTP/1.1" 200 1076
+[08/Oct/2015 20:52:24] "GET /static/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[08/Oct/2015 20:52:24] "GET /favicon.ico HTTP/1.1" 404 2440
+[08/Oct/2015 20:52:37] "GET / HTTP/1.1" 200 1734
+[08/Oct/2015 20:52:37] "GET /static/css/style.css HTTP/1.1" 200 1057
+[08/Oct/2015 20:52:37] "GET /static/underscore/underscore.js HTTP/1.1" 200 52919
+[08/Oct/2015 20:52:37] "GET /static/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 147430
+[08/Oct/2015 20:52:37] "GET /static/jquery/dist/jquery.js HTTP/1.1" 200 247597
+[08/Oct/2015 20:52:37] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:52:39] "GET /static/js/scripts.js HTTP/1.1" 200 1076
+[08/Oct/2015 20:52:39] "GET /static/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[08/Oct/2015 20:52:39] "GET /favicon.ico HTTP/1.1" 404 2440
+[08/Oct/2015 20:54:20] "GET /static/sounds/alert.mp3 HTTP/1.1" 200 151457
+[08/Oct/2015 20:54:30] "POST / HTTP/1.1" 302 0
+[08/Oct/2015 20:54:30] "GET /create HTTP/1.1" 200 974
+[08/Oct/2015 20:54:30] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:54:44] "POST /create HTTP/1.1" 302 0
+[08/Oct/2015 20:54:44] "GET /list HTTP/1.1" 200 1306
+[08/Oct/2015 20:54:44] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:54:44] "GET /static/fonts/V5PRD___.TTF HTTP/1.1" 200 126016
+[08/Oct/2015 20:54:50] "GET /static/bootstrap/dist/css/bootstrap.css.map HTTP/1.1" 200 390518
+[08/Oct/2015 20:56:21] "GET / HTTP/1.1" 200 1734
+[08/Oct/2015 20:56:21] "GET /static/css/style.css HTTP/1.1" 200 1057
+[08/Oct/2015 20:56:21] "GET /static/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 147430
+[08/Oct/2015 20:56:21] "GET /static/underscore/underscore.js HTTP/1.1" 200 52919
+[08/Oct/2015 20:56:21] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:56:21] "GET /static/jquery/dist/jquery.js HTTP/1.1" 200 247597
+[08/Oct/2015 20:56:21] "GET /static/js/scripts.js HTTP/1.1" 200 1076
+[08/Oct/2015 20:56:24] "GET /static/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+[08/Oct/2015 20:56:24] "GET /favicon.ico HTTP/1.1" 404 2440
+[08/Oct/2015 20:57:27] "GET /static/sounds/alert.mp3 HTTP/1.1" 200 151457
+[08/Oct/2015 20:57:37] "POST / HTTP/1.1" 302 0
+[08/Oct/2015 20:57:37] "GET /create HTTP/1.1" 200 974
+[08/Oct/2015 20:57:37] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:58:00] "POST /create HTTP/1.1" 302 0
+[08/Oct/2015 20:58:00] "GET /list HTTP/1.1" 200 1383
+[08/Oct/2015 20:58:00] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:58:00] "GET /static/fonts/V5PRD___.TTF HTTP/1.1" 200 126016
+[08/Oct/2015 20:58:10] "GET /list HTTP/1.1" 200 1383
+[08/Oct/2015 20:58:10] "GET /static/bootstrap/dist/css/bootstrap.css HTTP/1.1" 304 0
+[08/Oct/2015 20:58:13] "GET /static/css/style.css HTTP/1.1" 304 0
+[08/Oct/2015 20:58:13] "GET /static/jquery/dist/jquery.js HTTP/1.1" 304 0
+[08/Oct/2015 20:58:13] "GET /static/underscore/underscore.js HTTP/1.1" 304 0
+[08/Oct/2015 20:58:13] "GET /static/bootstrap/dist/bootstrap.js HTTP/1.1" 404 1696
+[08/Oct/2015 20:58:13] "GET /static/js/scripts.js HTTP/1.1" 304 0
+

@@ -22,7 +22,7 @@ def form(request):
         form = SombraForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(reverse('la_gran_sombra:list'))
+            return redirect(reverse('la_gran_sombra:thanks'))
     else:
         form = SombraForm()
     context = {}
@@ -36,3 +36,6 @@ def list(request):
     context = {}
     context['lista_cadaveres'] = lista_cadaveres
     return render(request, 'la_gran_sombra/list.html', context)
+
+def thanks(request):
+    return render(request, 'la_gran_sombra/thanks.html')

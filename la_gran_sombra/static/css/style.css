@@ -1,6 +1,21 @@
 body{
-		background: #CCC;
-	}
+	background: #CCC;
+}
+.container{
+	min-width: 350px;
+	min-height: 350px;
+}
+/*.salida{
+	max-width: 700px;
+	max-height: 500px;
+	font-size: 5rem;
+}*/
+fieldset{
+	margin-top: 10%;
+	font-family: vsprofit;
+	color:#2EDE36;
+	background-color:#743F3F; 
+}
 .redondo{
 	margin-top: 5%;
 	width:500px;
@@ -25,21 +40,9 @@ body{
     margin-left: 12%;
     font-size: 20rem;
 }
-fieldset{
-	width: 80%;
-	margin-top: 6%;
-	margin-right: 30%;
-	font-family: vsprofit;
-	color:#2EDE36;
-	background-color:#743F3F; 
-}
 @font-face{
 	font-family: vsprofit;
 	src:url(/static/fonts/V5PRD___.TTF);
-}
-.container{
-	max-width: 350px;
-	max-height: 350px;
 }
 .input-timer{
 	width: 250px;
@@ -49,17 +52,22 @@ fieldset{
 	font-family:monospace;
 	text-align:center;
 }
-.boton{
-	width: 100px;
-	margin:10px 10px 0px 20px;
-}
 .sombra{
 	border-radius: 0;
 	-moz-box-shadow:    10px 10px 10px 2px #000;
     -webkit-box-shadow: 10px 10px 10px 2px #000;
     box-shadow:         10px 10px 10px 2px #000;
 }
+.boton{
+	width: 100px;
+	margin:10px 10px 0px 20px;
+}
 #play{
 	width: 240px;
 	height: 120px;
+}
+.logif{
+	width: 300px;
+	height: 300px;
+	background: url(/static/gifs/1.gif);
 }
