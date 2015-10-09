@@ -15,6 +15,9 @@ fieldset{
 	color:#2EDE36;
 	background-color:#743F3F; 
 }
+.red{
+	color:#A53C3C;
+}
 .redondo{
 	margin-top: 5%;
 	width:500px;
@@ -49,6 +52,9 @@ fieldset{
 	font-size: 15rem;
 	font-family:monospace;
 	text-align:center;
+}
+.margen{
+	margin-top: 100px;
 }
 .sombra{
 	border-radius: 0;

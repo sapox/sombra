@@ -1,8 +1,27 @@
 {% extends "la_gran_sombra/base.html" %}
 {% block content %}
-
-<div class="logif">
-	muchas gracias pibe
+<div class="container">
+	<div class="row margen">
+		<div class="col-md-6 col-md-offset-3">
+			<h2>  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  </h2>
+			<h2>  >>>>>>>><p class="red"> muchas gracias </p>>>>>>>>>  </h2>
+			<h2>  >>>>>>>> </h2>
+			
+		</div>
+		
+	</div>
 </div>
-
 {% endblock content %}
+
+{% block js %}
+
+	{{ block.super }}
+	<script>
+	$(function(){
+		setTimeout(function(){
+			location.href = "/";
+		}, 5000);
+	})
+	</script>
+
+{% endblock js %}

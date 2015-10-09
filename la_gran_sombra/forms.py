@@ -17,6 +17,10 @@ class TimerForm(forms.Form):
 
 
 class SombraForm(forms.ModelForm):
+    cadaver = forms.CharField(
+    	label="",
+    	widget = forms.Textarea(attrs={"class":"form-control sombra"}),
+    	)
     class Meta:
         fields = ['cadaver']
         model = Sombra
